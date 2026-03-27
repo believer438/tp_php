@@ -70,8 +70,8 @@ require_once 'includes/header.php';
 ?>
 <section class="panel">
     <div class="panel-header">
-        <h2>Produits</h2>
-        <p>Ajoutez, modifiez et organisez les produits de reference utilises dans les bons.</p>
+        <h2>Ajout produit </h2>
+        <p>Ajoutez vos produits dans le stock</p>
     </div>
 
     <?php if ($alert['message'] !== ''): ?>
@@ -85,7 +85,7 @@ require_once 'includes/header.php';
         <input type="hidden" name="id" value="<?php echo $editProduit['id'] ?? 0; ?>">
         <div>
             <label for="nom">Nom du produit</label>
-            <input type="text" id="nom" name="nom" placeholder="Ex: Sucre 25 kg" value="<?php echo htmlspecialchars($editProduit['nom'] ?? ''); ?>" required>
+            <input type="text" id="nom" name="nom" placeholder="arachide" value="<?php echo htmlspecialchars($editProduit['nom'] ?? ''); ?>" required>
         </div>
         <div class="form-action">
             <button type="submit" class="button"><?php echo $editProduit ? 'Mettre a jour' : 'Ajouter'; ?></button>

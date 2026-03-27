@@ -51,10 +51,11 @@ if ($editingId > 0) {
 
 require_once 'includes/header.php';
 ?>
+
 <section class="panel">
     <div class="panel-header">
-        <h2>Bon de commande</h2>
-        <p>Suivez, corrigez et nettoyez les commandes en cours ou deja enregistrees.</p>
+        <h2>Bon de commande caisse</h2>
+        
     </div>
 
     <?php if ($alert['message'] !== ''): ?>
